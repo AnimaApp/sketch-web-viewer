@@ -26,7 +26,8 @@ export default {
 </script>
 <style scoped>
 .dropzone-area {
-  width: 80%;
+  width: 90%;
+  max-width: 800px;
   height: 200px;
   position: relative;
   border: 2px dashed #CBCBCB;
@@ -35,7 +36,6 @@ export default {
     .dropzone-title {
       color: #1975A0;
     }
-
   }
 }
 
@@ -49,14 +49,13 @@ export default {
   width: 100%;
   height: 100%;
   opacity: 0;
+  padding: 20px 10px;
 }
 
 .dropzone-text {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  line-height: 200px;
   text-align: center;
-  transform: translate(0, -50%);
-  width: 100%;
   span {
     display: block;
     font-family: Arial, Helvetica;

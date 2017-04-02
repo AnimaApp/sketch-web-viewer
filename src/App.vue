@@ -6,10 +6,10 @@
 </style>
 
 <template>
-  <div v-bind:style='{ width: "" + imageWidth + "px", height: "" + imageHeight + "px" }'>
+  <div v-bind:style='{ width: "" + (imageWidth + 60) + "px", height: "" + imageHeight + "px", margin: "30px 50px" }'>
 
-    <div v-if="imageData "v-bind:style='{ position:
-      "absolute", backgroundImage: "url(" + imageData + ")",
+    <div v-if="imageData "v-bind:style='{ position: "relative",
+      backgroundImage: "url(" + imageData + ")",
       backgroundRepeat: "no-repeat",
       backgroundSize: "contain",
       backgroundPosition: "center",
